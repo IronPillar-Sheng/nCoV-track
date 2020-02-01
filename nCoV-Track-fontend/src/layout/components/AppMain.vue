@@ -1,11 +1,13 @@
 <template>
   <section class="app-main">
     <el-card class="tip">
-      <div>
-        因数据接口较为敏感，为避免不必要的恐慌，我们暂时不提供确诊及疑似患者活动数据的录入接口。
-      </div>
-      <div>
-        仅当政府或防疫部门在实际使用时，我们会免费提供其余模块及接口，并提供全部的后续支持。
+      <div class="left">
+        <div>
+          因数据接口较为敏感，为避免不必要的恐慌，我们暂时不提供确诊及疑似患者活动数据的录入接口。
+        </div>
+        <div>
+          仅当政府或防疫部门在实际使用时，我们会免费提供其余模块及接口，并提供全部的后续支持。
+        </div>
       </div>
       <a href="https://github.com/ttaigithub/nCoV-track" class="github">
         GitHub
@@ -52,6 +54,10 @@ export default {
 
   .tip {
     position: relative;
+    .left {
+      color: darkred;
+      text-align: center;
+    }
     .github {
       position: absolute;
       right: 16px;
