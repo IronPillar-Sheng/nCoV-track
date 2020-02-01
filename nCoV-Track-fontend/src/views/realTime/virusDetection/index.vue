@@ -94,7 +94,7 @@ export default {
   },
   computed: {},
   mounted() {
-    // this.disclaimer()
+    this.disclaimer()
     this.changeDate()
   },
   methods: {
@@ -171,6 +171,6 @@ export default {
 <style lang="scss" type="text/scss" scoped>
   .map {
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 180px);
   }
 </style>

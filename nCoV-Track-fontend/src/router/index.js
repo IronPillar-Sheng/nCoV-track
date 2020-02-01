@@ -88,20 +88,74 @@ export const asyncRoutes = [
       {
         path: '/virusDetection',
         name: 'virusDetection',
-        component: () => import('@/views/virusDetection/index'),
+        component: () => import('@/views/realTime/virusDetection/index'),
         meta: { title: '活动轨迹', icon: 'table' }
       },
       {
         path: '/hospital',
         name: 'hospital',
-        component: () => import('@/views/hospital/index'),
+        component: () => import('@/views/realTime/hospital/index'),
         meta: { title: '定点医院', icon: 'table' }
       },
       {
         path: '/expressway',
         name: 'expressway',
-        component: () => import('@/views/expressway/index'),
+        component: () => import('@/views/realTime/expressway/index'),
         meta: { title: '高速路况', icon: 'table' }
+      },
+      {
+        path: '/thermodynamic',
+        name: 'thermodynamic',
+        component: () => import('@/views/realTime/thermodynamic/index'),
+        meta: { title: '热力图', icon: 'table' }
+      }
+    ]
+  },
+  {
+    path: '/assess',
+    name: 'assess',
+    component: Layout,
+    meta: { title: '健康评估', icon: 'table' },
+    children: [
+      {
+        path: '/assessIndex',
+        name: 'assessIndex',
+        component: () => import('@/views/assess/index'),
+        meta: { title: '健康评估', icon: 'table' }
+      }
+    ]
+  },
+  {
+    path: '/inform',
+    name: 'inform',
+    component: Layout,
+    meta: { title: '防疫通知', icon: 'table' },
+    children: [
+      {
+        path: '/enter',
+        name: 'informEnter',
+        component: () => import('@/views/inform/enter/index'),
+        meta: { title: '信息录入', icon: 'table' }
+      },
+      {
+        path: '/sms',
+        name: 'informSms',
+        component: () => import('@/views/inform/sms/index'),
+        meta: { title: '短信通知', icon: 'table' }
+      }
+    ]
+  },
+  {
+    path: '/model',
+    name: 'model',
+    component: Layout,
+    meta: { title: '模型预测', icon: 'table' },
+    children: [
+      {
+        path: '/modelIndex',
+        name: 'modelIndex',
+        component: () => import('@/views/model/index'),
+        meta: { title: '模型预测', icon: 'table' }
       }
     ]
   },
