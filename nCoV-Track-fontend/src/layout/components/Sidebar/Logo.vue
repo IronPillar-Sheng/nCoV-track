@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      title: '冠状病毒实时监控',
+      title: '新型冠状病毒防护平台',
       logo: require('@/icons/logo.png')
     }
   }

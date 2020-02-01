@@ -8,6 +8,9 @@
         <div>
           仅当政府或防疫部门在实际使用时，我们会免费提供其余模块及接口，并提供全部的后续支持。
         </div>
+        <div>
+          该平台仅面向政府、防疫部门进行大数据疫情防治决策，不面向C端用户。该平台仅做展示之用，核心功能均需私有化部署
+        </div>
       </div>
       <a href="https://github.com/ttaigithub/nCoV-track" class="github">
         GitHub
@@ -64,5 +67,6 @@ export default {
       top: 30px;
       color: #4491ED;
     }
+
   }
 </style>

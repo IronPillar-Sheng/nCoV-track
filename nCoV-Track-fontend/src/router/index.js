@@ -75,7 +75,7 @@ export const asyncRoutes = [
         path: '/index',
         name: 'index',
         component: () => import('@/views/info/index'),
-        meta: { title: '平台简介', icon: 'table' }
+        meta: { title: '平台简介', icon: '平台简介' }
       }
     ]
   },
@@ -83,31 +83,31 @@ export const asyncRoutes = [
     path: '/realTime',
     component: Layout,
     redirect: 'noRedirect',
-    meta: { title: '实时数据', icon: '文件夹' },
+    meta: { title: '实时数据', icon: '实时数据' },
     children: [
       {
         path: '/virusDetection',
         name: 'virusDetection',
         component: () => import('@/views/realTime/virusDetection/index'),
-        meta: { title: '活动轨迹', icon: 'table' }
+        meta: { title: '活动轨迹', icon: '活动轨迹' }
       },
       {
         path: '/hospital',
         name: 'hospital',
         component: () => import('@/views/realTime/hospital/index'),
-        meta: { title: '定点医院', icon: 'table' }
+        meta: { title: '定点医院', icon: '定点医院' }
       },
       {
         path: '/expressway',
         name: 'expressway',
         component: () => import('@/views/realTime/expressway/index'),
-        meta: { title: '高速路况', icon: 'table' }
+        meta: { title: '高速路况', icon: '高速路况' }
       },
       {
         path: '/thermodynamic',
         name: 'thermodynamic',
         component: () => import('@/views/realTime/thermodynamic/index'),
-        meta: { title: '热力图', icon: 'table' }
+        meta: { title: '热力图', icon: '热力图' }
       }
     ]
   },
@@ -115,13 +115,13 @@ export const asyncRoutes = [
     path: '/assess',
     name: 'assess',
     component: Layout,
-    meta: { title: '健康评估', icon: 'table' },
+    meta: { title: '健康评估', icon: '健康评估' },
     children: [
       {
         path: '/assessIndex',
         name: 'assessIndex',
         component: () => import('@/views/assess/index'),
-        meta: { title: '健康评估', icon: 'table' }
+        meta: { title: '健康评估', icon: '健康评估' }
       }
     ]
   },
@@ -129,19 +129,19 @@ export const asyncRoutes = [
     path: '/inform',
     name: 'inform',
     component: Layout,
-    meta: { title: '防疫通知', icon: 'table' },
+    meta: { title: '防疫通知', icon: '防疫通知' },
     children: [
       {
         path: '/enter',
         name: 'informEnter',
         component: () => import('@/views/inform/enter/index'),
-        meta: { title: '信息录入', icon: 'table' }
+        meta: { title: '信息录入', icon: '信息录入' }
       },
       {
         path: '/sms',
         name: 'informSms',
         component: () => import('@/views/inform/sms/index'),
-        meta: { title: '短信通知', icon: 'table' }
+        meta: { title: '短信通知', icon: '短信通知' }
       }
     ]
   },
@@ -155,7 +155,7 @@ export const asyncRoutes = [
         path: '/modelIndex',
         name: 'modelIndex',
         component: () => import('@/views/model/index'),
-        meta: { title: '模型预测', icon: 'table' }
+        meta: { title: '模型预测', icon: '模型预测' }
       }
     ]
   },

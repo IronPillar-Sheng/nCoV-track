@@ -171,6 +171,6 @@ export default {
 <style lang="scss" type="text/scss" scoped>
   .map {
     width: 100%;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 190px);
   }
 </style>

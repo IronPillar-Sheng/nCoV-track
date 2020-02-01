@@ -154,7 +154,7 @@ export default {
 <style lang="scss" type="text/scss" scoped>
   .map {
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 220px);
   }
 
   .wrap {

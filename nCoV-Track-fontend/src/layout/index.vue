@@ -59,11 +59,12 @@ export default {
     position: relative;
     height: 100%;
     width: 100%;
-    &.mobile.openSidebar{
+    &.mobile.openSidebar {
       position: fixed;
       top: 0;
     }
   }
+
   .drawer-bg {
     background: #000;
     opacity: 0.3;
@@ -90,4 +91,5 @@ export default {
   .mobile .fixed-header {
     width: 100%;
   }
+
 </style>
